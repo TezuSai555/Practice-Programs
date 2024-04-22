@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device=width,initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Bootstrap Table Styles Example</title>
+  <style>
+  .table-container{
+	margin-top:20px;
+  }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+	<h1>Bootstrap Table Styles Example</h1>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="tablestyle" id="normalTable" value="table">
+		<label class="form-check-label" for="normalTable">Normal Table</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="tablestyle" id="stripedTable" value="table table-striped">
+		<label class="form-check-label" for="stripedTable">Striped Table</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="tablestyle" id="borderedTable" value="table table-bordered">
+		<label class="form-check-label" for="borderedTable">Bordered Table</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="tablestyle" id="hoverableTable" value="table table-hover">
+		<label class="form-check-label" for="hoverableTable">Hoverable Table</label>
+	</div>
+	<div class="table-container">
+		<div class="table-responsive">
+			<table id="selectedTable" class="table">
+				<thead>
+					<tr>
+						<th>Header 1</th>
+						<th>Header 2</th>
+						<th>Header 3</th>
+						<th>Header 4</th>
+						<th>Header 5</th>
+						<th>Header 6</th>
+						<th>Header 7</th>
+						<th>Header 8</th>
+						<th>Header 9</th>
+						<th>Header 10</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Data 1</td>
+						<td>Data 2</td>
+						<td>Data 3</td>
+						<td>Data 4</td>
+						<td>Data 5</td>
+						<td>Data 6</td>
+						<td>Data 7</td>
+						<td>Data 8</td>
+						<td>Data 9</td>
+						<td>Data 10</td>
+					</tr>
+					<tr>
+						<td>Data 1</td>
+						<td>Data 2</td>
+						<td>Data 3</td>
+						<td>Data 4</td>
+						<td>Data 5</td>
+						<td>Data 6</td>
+						<td>Data 7</td>
+						<td>Data 8</td>
+						<td>Data 9</td>
+						<td>Data 10</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+	function changeTableStyle(){
+		const selectedStyle=document.querySelector('input[name="tablestyle"]:checked').value;
+		document.getElementById('selectedTable').className=selectedStyle;
+	}
+	const radioButtons=document.querySelectorAll('input[name="tableStyle"]');
+	radioButtons.ForEach((radioButton)=>{
+		radioButton.addEventListener('change',changeTableStyle);
+	});
+  </script>
+ </body>
+</html>
