@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> Sign up </title>
+ </head>
+ <body>
+ <form method="POST" action="">
+  <table border="1">
+  <tr>
+	<td colspan="2" style="text-align:left"><b>Sign Up</b></td>
+  </tr>
+  <tr>
+  <td>
+  <table >
+		<tr>
+			 <td>First Name</td>
+			 <td><input type="text" name="fname" placeholder="Enter First Name"></td>
+		</tr>
+		<tr>
+			<td>Last Name</td>
+			<td><input type="text" name="lname" placeholder="Enter Last Name"></td>
+		</tr>
+		<tr>
+			<td>Date of Birth</td>
+			<td>
+			<select name="date">
+			<option value="select...">Date</option>
+			<option value="1-20">1-20</option>
+			<option value="20-31">20-31</option>
+		</select>
+		<select name="Month">
+			<option value="select...">Month</option>
+			<option value="January">January</option>
+			<option value="Feburary">Feburary</option>
+			<option value="March">March</option>
+		</select>
+	    <select name="Year">
+			<option value="select...">Year</option>
+			<option value="2001">2001</option>
+			<option value="2002">2002</option>
+		</select>
+		</td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td><input type="radio" name="gen" value="M">Male
+					<input type="radio" name="gen" value="F">Female
+			</td>
+		</tr>
+		<tr>
+			<td>Country</td>
+			<td>
+			<select name="country">
+			<option value="select...">country</option>
+			<option value="India">India</option>
+			<option value="US">US</option>
+			<option value="UK">UK</option>
+			<option value="Japan">Japan</option>
+		</select>
+		</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="email" name="email" placeholder="Enter E-mail"></td>
+		</tr>
+		<tr>
+			<td>Phone</td>
+			<td><input type="text" name="phone" placeholder="Enter Phone"></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type="Password" name="Password"></td>
+		</tr>
+		<tr>
+			<td>Confirm Password</td>
+			<td><input type="Password" name="confirmpassword"></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align:right;"><input type="checkbox" > I Agree to the Terms of use</td>
+	    </tr>
+  </table>
+  </td>
+  </tr>
+  <tr>
+	<td colspan="2" style="text-align:right;"><input type="submit" value="Submit">
+			<input type="button" value="cancel"></td>
+  </tr>
+  </table>
+  </form>
+  <style>
+form{
+  font-size:20px;
+  width:600px;
+  }
+  table{
+	background-color: aquamarine;
+  }
+  td{
+  padding:10px;
+  }
+  td:first-child{
+  text-align:right;
+  font-weight:bold;
+ 
+  }
+  td:last-child{
+  text-align:left;
+  
+  }
+  </style>
+ </body>
+</html>

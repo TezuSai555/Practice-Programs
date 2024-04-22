@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> Student </title>
+   </head>
+ <body>
+ <center>
+  <form action="" method="POST">
+ <table border="1" style="border:2px solid blue;">
+ <tr>
+	<td colspan="2" style="text-align:center"><b>Registration Form</b></td>
+ </tr>
+  <tr>
+	<td>Enter Name</td>
+	<td><input type="text" name="name"></td>
+  </tr>
+  <tr>
+	<td>Enter Password</td>
+	<td><input type="password" name="pass"></td>
+  </tr>
+  <tr>
+	<td>Enter Address</td>
+	<td><textarea name="address" rows="4" cols="40"></textarea></td>
+  </tr>
+  <tr>
+	<td>Select Game</td>
+	<td><input type="checkbox" name="game" value="hockey">Hockey<br>
+			<input type="checkbox" name="game" value="football">Foot ball<br>
+			<input type="checkbox" name="game" value="badminton">Badminton<br>
+			<input type="checkbox" name="game" value="cricket">Cricket<br>
+			<input type="checkbox" name="game" value="volleyball">Volley ball</td>
+  </tr>
+  <tr>
+	<td>Gender</td>
+	<td><input type="radio" name="gender" value="M">Male
+			<input type="radio" name="gender" value="F">Female
+	</td>
+  </tr>
+  <tr>
+	<td>Select ur age</td>
+	<td><select name="age">
+				<option value="select">select</option>
+				<option value="20-30">20-30</option>
+				<option value="30-40">30-40</option>
+				<option value="40-50">40-50</option>
+				</select>
+   </td>
+  </tr>
+  <tr>
+	<td>Select Photo</td>
+	<td><input type="file" name="photo"></td>
+  </tr>
+  <tr>
+	<td colspan="2"><center><input type="button" value="Click Me">
+								<input type="reset" value="Reset">
+								<input type="submit" value="Submit Form"></center>
+	</td>
+  </tr>
+  </table>
+  </form>
+  </center>
+  <style>
+  form{
+  font-size:20px;
+  width:600px;
+  }
+  td{
+  padding:10px;
+  }
+  td:first-child{
+  text-align:right;
+  font-weight:bold;
+   background-color:skyblue;
+  }
+  td:last-child{
+  text-align:left;
+  background-color:lightpink; 
+  }
+  </style>
+  </body>
+</html>
